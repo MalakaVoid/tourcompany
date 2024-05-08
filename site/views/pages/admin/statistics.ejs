@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin/statistics.css">
+    <%- include('../../common/_fonts.ejs') %>
+    <title>Statistics</title>
+</head>
+<body>
+    <script src="/js/redirect_user.js"></script>
+
+    <%- include('../../common/_headerAdmin.ejs') %>
+
+    <main>
+        <h1 class="page_title">СТАТИСТИКА</h1>
+        <section class="statistics">
+            <div class="statistics__saled statistics__block">
+                <h3 class="statistics__title">
+                    ПРОДАННЫЕ ПУТЕВКИ
+                </h3>
+                <div class="statistics__list">
+                    <% saledTours.forEach(tour => { %>
+                        <div class="statistics__list_item">
+                            <a href="/tour/<%= tour.id %>"><%= tour.name %></a>
+                            <div>
+                                <%= tour.saled %>
+                            </div>
+                        </div>
+                    <% }) %>
+                </div>
+            </div>
+            <div class="statistics__lost_on_discount statistics__block">
+                <h3 class="statistics__title">
+                    ПОТЕРИ ИЗ-ЗА СКИДОК
+                </h3>
+                <div class="statistics__money">
+                    <%= lostMoney.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB', maximumFractionDigits: 0 }) %>
+                </div>
+            </div>
+            <div class="statistics__amount statistics__block">
+                <h3 class="statistics__title">
+                    НАЛИЧИЕ ПУТЕВОК
+                </h3>
+                <div class="statistics__list">
+                    <% amountTours.forEach(tour => { %>
+                        <div class="statistics__list_item">
+                            <a href="/tour/<%= tour.id %>"><%= tour.name %></a>
+                            <div>
+                                <%= tour.amount %>
+                            </div>
+                        </div>
+                    <% }) %>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

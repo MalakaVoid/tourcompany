@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin/tours.css">
+    <%- include('../../common/_fonts.ejs') %>
+    <title>TOURS</title>
+</head>
+<body>
+    <script src="/js/redirect_user.js"></script>
+
+    <%- include('../../common/_headerAdmin.ejs') %>
+
+    <main>
+        <h1 class="page_title">ПУТЕВКИ</h1>
+
+        <section class="tours">
+            <div class="filter">
+                <h3 class="filter__title">Фильтры:</h3>
+                <div class="filter__price filter__item">
+                    Цена от: <input id="filterPriceMin" type="number" name="priceMin">
+                    до: <input id="filterPriceMax" type="number" name="priceMax">
+                </div>
+                <div class="filter__date filter__item">
+                    Дата отьезда: <input id="filterStartDate" type="date" name="date">
+                </div>
+                <div class="filter__city filter__item">
+                    Город: <input id="filterCity" type="text" name="city">
+                </div>
+            </div>
+            <div class="filter_choices">
+                <button class="filter_choices__button" id="popularButton">
+                    ПОПУЛЯРНЫЕ
+                </button>
+                <button class="filter_choices__button" id="cheapButton">
+                    Сначала дешевые
+                </button>
+                <button class="filter_choices__button" id="expensiveButton">
+                    Сначала дорогие
+                </button>
+                <button class="filter_choices__button" id="hotButton">
+                    Горящие
+                </button>
+            </div>
+            <div class="error_block">
+                <div class="error">
+
+                </div>
+            </div>
+            <div class="list_container tour_list">
+                <div class="grid_list tour_list__grid">
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="/js/tours/tours.js"></script>
+    
+</body>
+</html>

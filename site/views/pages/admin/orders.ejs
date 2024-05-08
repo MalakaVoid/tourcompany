@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin/orders.css">
+    <%- include('../../common/_fonts.ejs') %>
+    <title>ORDERS</title>
+</head>
+<body>
+    <script src="/js/redirect_user.js"></script>
+
+    <%- include('../../common/_headerAdmin.ejs') %>
+
+    <main>
+        <h1 class="page_title">ЗАКАЗЫ</h1>
+
+        <section class="orders">
+            <div class="filter">
+                <h3 class="filter__title">Фильтры:</h3>
+                <div class="filter__date filter__item">
+                    Дата: <input type="date" name="filter_date">
+                </div>
+                <div class="filter__city filter__item">
+                    Клиент:
+                    <select name="filter_client">
+                        <option selected value=""></option>
+                        <% clients.forEach(client => { %>
+                            <option value="<%= client.id %>"><%= client.credentials %></option>
+                        <% }) %>
+                    </select>
+                </div>
+                <div class="filter__city filter__item">
+                    Путевка:
+                    <select name="filter_tours">
+                        <option selected value=""></option>
+                        <% tours.forEach(tour => { %>
+                            <option value="<%= tour.id %>"><%= tour.name %></option>
+                        <% }) %>
+                    </select>
+                </div>
+                <div class="filter__city filter__item">
+                    Город: <input type="text" name="filter_city">
+                </div>
+            </div>
+            <div class="list_container">
+                <div class="grid_list">
+
+                    <div class="card">
+                        <h3 class="card__title">
+                            Заказ №1321
+                        </h3>
+                        <div class="card__item">
+                            <span>Название путевки:</span> <a>ПУТЕВКА ТУДА ТО</a>
+                        </div>
+                        <div class="card__item">
+                            <span>ФИО сотрудника:</span> ЖМЫШЕНКО ВАЛЕРИЙ СЕРГЕЕВИЧ
+                        </div>
+                        <div class="card__item">
+                            <span>ФИО заказчика:</span> ЖМЫШЕНКО ВАЛЕРИЙ СЕРГЕЕВИЧ
+                        </div>
+                        <div class="card__item">
+                            <span>Телефон заказчика:</span> 8 (999) 999-99-99
+                        </div>
+                        <div class="card__item">
+                            <span>Паспортные данные заказчика:</span> 1234 123123
+                        </div>
+                        <div class="card__item">
+                            <span>Скидка:</span> 5%
+                        </div>
+                        <div class="card__item card__item_price">
+                            <span>Цена:</span> 29 990 ₽
+                        </div>
+                        <div class="card__date">
+                            22.12.2003
+                        </div>
+                        <button class="card__button">
+                            ОТМЕНИТЬ
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="/js/orders/orders.js"></script>
+    <script src="/js/createPopup.js"></script>
+    
+</body>
+</html>

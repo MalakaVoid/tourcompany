@@ -1,0 +1,157 @@
+@media screen and (min-width: 1920px) {
+    .tour__info{
+        grid-template-columns: 1fr 1fr;
+    }
+    .tour__info_item{
+        font-size: 1.25rem;
+        margin-top: 15px;
+    }
+    .order_form{
+        margin-top: 40px;
+        font-size: 1.25rem;
+    }
+    .tour input,
+    .tour select{
+        height: 35px;
+        font-size: 1.25rem;
+        padding: 0 15px;
+    }
+    .tour__button{
+        font-size: 1.1rem;
+        margin-top: 40px;
+        padding: 10px 10px;
+    }
+}
+@media screen and (max-width: 1920px) {
+    .tour__info{
+        grid-template-columns: 1fr 1fr;
+    }
+    .tour__info_item{
+        font-size: 1.25rem;
+        margin-top: 15px;
+    }
+    .order_form{
+        margin-top: 40px;
+        font-size: 1.25rem;
+    }
+    .tour input,
+    .tour select{
+        height: 35px;
+        font-size: 1.25rem;
+        padding: 0 15px;
+    }
+    .tour__button{
+        font-size: 1.1rem;
+        margin-top: 40px;
+        padding: 10px 10px;
+    }
+}   
+@media screen and (max-width: 1024px) {
+
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 460px) {
+    .tour__info{
+        grid-template-columns: 1fr;
+    }
+    .tour__info_item{
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .order_form{
+        margin-top: 30px;
+        font-size: 1rem;
+    }
+    .tour input,
+    .tour select{
+        height: 28px;
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+    .tour__button{
+        font-size: 1rem;
+        margin-top: 30px;
+        padding: 8px 10px;
+    }
+}
+.tour{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.tour__info{
+    display: grid;
+    width: 100%;
+    max-width: 500px;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-white);
+}
+.tour__info_item{
+    box-sizing: border-box;
+}
+.tour__info_item span{
+    color: var(--sup-white);
+}
+.tour__info_price{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 20px;
+    color: var(--main-white);
+}
+
+.order_form{
+    display: grid;
+    grid-template-columns: max-content 2fr;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+    color: var(--main-white);
+}
+
+.tour input,
+.tour select{
+    width: 100%;
+    box-sizing: border-box;
+    outline: none !important;
+    border: none;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    color: black;
+}
+.order_form_title{
+    text-align: right;
+}
+.order_form_input_discount input{
+    width: 60px;
+}
+#create_user{
+    text-decoration: underline;
+    color: var(--sup-white);
+    cursor: pointer;
+}
+#create_user:hover{
+    color: var(--main-white);
+}
+.tour__button{
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    background-color: #AF5BAF;
+    font-weight: 600;
+    border-radius: 10px;
+    color: var(--main-white);
+    transition: 0.25s;
+}
+.tour__button:hover{
+    background-color: #d445d4;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin/clients.css">
+    <%- include('../../common/_fonts.ejs') %>
+    <title>CLIENTS</title>
+</head>
+<body>
+    <script src="/js/redirect_user.js"></script>
+
+    <%- include('../../common/_headerAdmin.ejs') %>
+
+    <main>
+        <h1 class="page_title">КЛИЕНТЫ</h1>
+
+        <section class="clients">
+            <div class="error_block">
+                <div class="error">
+
+                </div>
+            </div>
+            <div class="list_container client_list">
+                <div class="grid_list client_list__grid">
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="/js/clients/clients.js"></script>
+    <script src="/js/createPopup.js"></script>
+    
+</body>
+</html>

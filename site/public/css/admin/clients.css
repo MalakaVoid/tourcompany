@@ -1,0 +1,47 @@
+@media screen and (min-width: 1920px) {
+    .card__add input{
+        height: 35px;
+        font-size: 1.25rem;
+        padding: 0 15px;
+    }
+}
+@media screen and (max-width: 1920px) {
+    .card__add input{
+        height: 35px;
+        font-size: 1.25rem;
+        padding: 0 15px;
+    }
+}   
+@media screen and (max-width: 1024px) {
+
+
+}
+@media screen and (max-width: 768px) {
+    .card__add input{
+        height: 28px;
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 460px) {
+
+}
+.card__add .card__item{
+    text-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.card__add input{
+    flex: 1;
+    box-sizing: border-box;
+    outline: none !important;
+    border: none;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    color: black;
+    min-width: 20px;
+}
+.card__item_discount input{
+    max-width: 60px;
+}

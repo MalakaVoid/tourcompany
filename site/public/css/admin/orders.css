@@ -1,0 +1,47 @@
+@media screen and (min-width: 1920px) {
+    .card__date{
+        font-size: 1.25rem;
+    }
+    .card__item_price{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 1920px) {
+    .card__date{
+        font-size: 1.25rem;
+    }
+    .card__item_price{
+        margin-top: 30px;
+    }
+}   
+@media screen and (max-width: 1024px) {
+
+
+}
+@media screen and (max-width: 768px) {
+    .card__date{
+        font-size: 1rem;
+    }
+    .card__item_price{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 460px) {
+
+}
+
+.card__item_price{
+    margin-top: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.card__date{
+    margin-top: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.order_link{
+    text-decoration: underline;
+}

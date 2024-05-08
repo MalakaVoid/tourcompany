@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin/tour.css">
+    <%- include('../../common/_fonts.ejs') %>
+    <title>TOUR</title>
+</head>
+<body>
+    <script src="/js/redirect_user.js"></script>
+
+    <%- include('../../common/_headerAdmin.ejs') %>
+
+    <main>
+        <h1 class="page_title"><%= tour.name %></h1>
+
+        <section class="tour">
+            <div class="tour__info">
+                <div class="tour__info_item">
+                    <span>Начало:</span> <%= tour.startDate.toLocaleDateString() %>
+                </div>
+                <div class="tour__info_item">
+                    <span>Конец:</span> <%= tour.endDate.toLocaleDateString() %>
+                </div>
+                <div class="tour__info_item">
+                    <span>Город:</span> <%= tour.city %>
+                </div>
+                <div class="tour__info_item">
+                    <span>Осталось:</span> <%= tour.amount %>
+                </div>
+            </div>
+            <div class="tour__info_services tour__info_item" style="color: white">
+                <span>Услуги:</span> <%= tour.services %>
+            </div>
+            <div class="tour__info_price">
+                <%= tour.price.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB', maximumFractionDigits: 0 }) %>
+            </div>
+            <div class="error_block">
+                <div class="error">
+
+                </div>
+            </div>
+            <form class="order_form" id="order_form">
+                <input type="hidden" name="tour_id" value="<%= tour.id %>">
+                <input type="hidden" name="tour_price" value="<%= tour.price %>">
+                <div class="order_form_title">
+                    ФИО сотрудникда:
+                </div>
+                <div class="order_form_input" >
+                    <input type="text" name="employee_name">
+                </div>
+                <div class="order_form_title">
+                    Клиент (<span id="create_user">создать</span>):
+                </div>
+                <div class="order_form_input">
+                    <select class="order_form_input" name="client_id">
+                        <option value="" selected></option>
+                        <% clients.forEach(client => { %>
+                            <option value="<%= client.id %>"><%= client.credentials %></option>
+                        <% }) %>
+                    </select>
+                </div>
+            </form>
+
+            <form class="order_form" id="user_form">
+                <div class="order_form_title">
+                    ФИО:
+                </div>
+                <div class="order_form_input">
+                    <input type="text" name="client_credentials">
+                </div>
+                <div class="order_form_title">
+                    Телефон:
+                </div>
+                <div class="order_form_input">
+                    <input type="text" name="client_phone">
+                </div>
+                <div class="order_form_title">
+                    Номер пасспорта:
+                </div>
+                <div class="order_form_input">
+                    <input type="text" name="client_passport">
+                </div>
+                <div class="order_form_title">
+                    Скидка:
+                </div>
+                <div class="order_form_input order_form_input_discount">
+                    <input type="text" name="client_discount"> %
+                </div>
+            </form>
+            <button class="tour__button" id="makeOrderButton">
+                ОФОРМИТЬ
+            </button>
+
+
+        </section>
+
+    </main>
+    <script src="/js/tour/tour.js"></script>
+    <script src="/js/createPopup.js"></script>
+    
+</body>
+</html>

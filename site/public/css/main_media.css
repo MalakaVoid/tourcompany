@@ -1,0 +1,350 @@
+@media screen and (min-width: 1250px) {
+    :root{
+        --side-paddings: 20px;
+        --header-height: 150px;
+    }
+    nav.navigation-header{
+        display: block;
+    }
+    .header__menu_button{
+        display: none;
+    }
+    ul.navigation-items{
+        justify-content: flex-end;
+        gap: 20px;
+    }
+    .header__exit_button{
+        display: none;
+    }
+    .welcome-page-swiper-container{
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    swiper-slide .title{
+        font-size: 28px;
+    }
+    swiper-slide p{
+        font-size: 24px;
+        margin-top: 10px;
+    }
+    swiper-slide .price{
+        font-size: 32px;
+    }
+    swiper-slide .amount{
+        font-size: 16px;
+    }
+    swiper-slide button,
+    #popup button{
+        font-size: 20px;
+        padding: 8px 10px;
+        margin-top: 10px;
+    }
+    h1.header-about-us{
+        font-size: 30px;
+        line-height: 188.52%;
+    }
+    p.description-about-us{
+        font-size: 20px;
+        line-height: 150%;
+    }
+    .find-block-office{
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+        padding: 0 0 0 10px;
+        max-width: 1200px;
+    }
+    .map-block-offices{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .text-list-item-block{
+        font-size: 20px;
+        line-height: 188.52%;
+    }
+    .list-item-block{
+        gap: 35px;
+    }
+    .top-block-agents{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-agents{
+        font-size: 36px;
+        line-height: 161.02%;
+    }
+    p.description-agents{
+        font-size: 24px;
+        line-height: 150%;
+    }
+    p.description-agents-bottom{
+        font-size: 24px;
+        line-height: 161.02%;
+    }
+    #popup input{
+        height: 35px;
+        font-size: 1.25rem;
+    }
+    #popup .popup__title{
+        font-size: 1.5rem;
+        margin-top: 55px;
+    }
+    #popup .popup__desc{
+        margin-top: 30px;
+        font-size: 1.25rem;
+    }
+}
+@media screen and (max-width: 1250px) {
+    :root{
+        --side-paddings: 20px;
+        --header-height: 150px;
+    }
+    nav.navigation-header{
+        display: block;
+    }
+    .header__menu_button{
+        display: none;
+    }
+    ul.navigation-items{
+        justify-content: flex-end;
+        gap: 20px;
+    }
+    .header__exit_button{
+        display: none;
+    }
+    .welcome-page-swiper-container{
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .block-left-shares-welcome-page{
+        order: 2;
+    }
+    .reels-shares-welcome-page{
+        order: 1;
+    }
+    swiper-slide .title{
+        font-size: 28px;
+    }
+    swiper-slide p{
+        font-size: 24px;
+        margin-top: 10px;
+    }
+    swiper-slide .price{
+        font-size: 32px;
+    }
+    swiper-slide .amount{
+        font-size: 16px;
+    }
+    swiper-slide button,
+    #popup button{
+        font-size: 20px;
+        padding: 8px 10px;
+        margin-top: 10px;
+    }
+    h1.header-about-us{
+        font-size: 30px;
+        line-height: 188.52%;
+    }
+    p.description-about-us{
+        font-size: 20px;
+        line-height: 150%;
+    }
+    .find-block-office{
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+        padding: 0 0 0 10px;
+        max-width: 1200px;
+    }
+    .map-block-offices{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .text-list-item-block{
+        font-size: 18px;
+        line-height: 150%;
+    }
+    .list-item-block{
+        gap: 25px;
+    }
+    .top-block-agents{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-agents{
+        font-size: 36px;
+        line-height: 161.02%;
+    }
+    p.description-agents{
+        font-size: 24px;
+        line-height: 150%;
+    }
+    p.description-agents-bottom{
+        font-size: 24px;
+        line-height: 161.02%;
+    }
+    #popup input{
+        height: 35px;
+        font-size: 1.25rem;
+    }
+    #popup .popup__title{
+        font-size: 1.5rem;
+        margin-top: 55px;
+    }
+    #popup .popup__desc{
+        margin-top: 30px;
+        font-size: 1.25rem;
+    }
+
+}
+@media screen and (max-width: 1024px) {
+    :root{
+        --side-paddings: 10px;
+        --header-height: 120px;
+    }
+    nav.navigation-header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100vh;
+        background: linear-gradient(0deg, #7c0090 1.5%, #4694ac 97%);
+        display: none;
+        flex-direction: column;
+        z-index: 200;
+        overflow-y: auto;
+    }
+    .header__menu_button{
+        display: block;
+    }
+    ul.navigation-items{
+        margin-top: var(--header-height);
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 15px;
+        position: relative;
+    }
+    .header__exit_button{
+        display: block;
+    }
+    h1.header-about-us{
+        font-size: 30px;
+        line-height: 188.52%;
+    }
+    .find-block-office{
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        gap: 30px;
+        padding: 20px 0px 0 0px ;
+        box-sizing: border-box;
+        max-width: 600px;
+    }
+    .find-block-office{
+        width: 100%;
+    }
+    .map-block-offices{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .map-block-offices > img{
+        width: 100%;
+    }
+    .text-list-item-block{
+        font-size: 16px;
+        line-height: 130%;
+    }
+}
+@media screen and (max-width: 768px) {
+    swiper-slide .title{
+        font-size: 24px;
+    }
+    swiper-slide p{
+        font-size: 20px;
+        margin-top: 7px;
+    }
+    swiper-slide .price{
+        font-size: 24px;
+    }
+    swiper-slide .amount{
+        font-size: 16px;
+    }
+    swiper-slide button,
+    #popup button{
+        font-size: 16px;
+        padding: 5px 10px;
+        margin-top: 10px;
+    }
+    h1.header-about-us{
+        font-size: 22px;
+        line-height: 150%;
+        padding-bottom: 20px;
+    }
+    p.description-about-us{
+        font-size: 20px;
+        line-height: 130%;
+    }
+    .list-item-block{
+        gap: 25px;
+    }
+    .top-block-agents{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .header-agents{
+        font-size: 28px;
+        line-height: 140%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    p.description-agents{
+        font-size: 20px;
+        line-height: 130%;
+        text-align: center;
+    }
+    .line-agents{
+        display: none;
+    }
+    p.description-agents-bottom{
+        font-size: 20px;
+        line-height: 140%;
+    }
+    #popup input{
+        height: 28px;
+        font-size: 1rem;
+    }
+    #popup .popup__title{
+        font-size: 1.25rem;
+        margin-top: 55px;
+    }
+    #popup .popup__desc{
+        font-size: 1rem;
+    }
+
+}
+@media screen and (max-width: 460px) {
+    .swiper-btn.right{
+        position: absolute;
+        bottom: -50px;
+        right: var(--side-paddings);
+    }
+    .swiper-btn.left{
+        position: absolute;
+        bottom: -50px;
+        left: var(--side-paddings);
+    }
+    .style-list-img{
+        height: 70px;
+    }
+    .list-item-block{
+        gap: 20px;
+    }
+}

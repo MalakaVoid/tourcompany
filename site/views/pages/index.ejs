@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/main_media.css">
+    <title>ПСН</title>
+</head>
+<body>
+
+    <header class="header-psn header">
+        <div class="container"> 
+            <div class="header-block">
+                <div class="logo-header">
+                    <a href="/"><img class="logo-image-header" src="/img/Ресурс 3 1.png" alt="#"></a>
+                </div>
+                <div class="header__menu_button">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </div>
+                <nav class="navigation-header header__nav">
+                    <div class="header__exit_button">
+                        <svg viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6.96967 16.4697C6.67678 16.7626 6.67678 17.2374 6.96967 17.5303C7.26256 17.8232 7.73744 17.8232 8.03033 17.5303L6.96967 16.4697ZM13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697L13.0303 12.5303ZM11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303L11.9697 11.4697ZM18.0303 7.53033C18.3232 7.23744 18.3232 6.76256 18.0303 6.46967C17.7374 6.17678 17.2626 6.17678 16.9697 6.46967L18.0303 7.53033ZM13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303L13.0303 11.4697ZM16.9697 17.5303C17.2626 17.8232 17.7374 17.8232 18.0303 17.5303C18.3232 17.2374 18.3232 16.7626 18.0303 16.4697L16.9697 17.5303ZM11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697L11.9697 12.5303ZM8.03033 6.46967C7.73744 6.17678 7.26256 6.17678 6.96967 6.46967C6.67678 6.76256 6.67678 7.23744 6.96967 7.53033L8.03033 6.46967ZM8.03033 17.5303L13.0303 12.5303L11.9697 11.4697L6.96967 16.4697L8.03033 17.5303ZM13.0303 12.5303L18.0303 7.53033L16.9697 6.46967L11.9697 11.4697L13.0303 12.5303ZM11.9697 12.5303L16.9697 17.5303L18.0303 16.4697L13.0303 11.4697L11.9697 12.5303ZM13.0303 11.4697L8.03033 6.46967L6.96967 7.53033L11.9697 12.5303L13.0303 11.4697Z" fill="#ffffff"></path> </g></svg>
+                    </div>
+                    <ul class="navigation-items">
+                        <li class="navigation-item"><a href="#aboutus" class="navigation-btn">О нас</a></li>
+                        <li class="navigation-item"><a href="#sales" class="navigation-btn">Акции</a></li>
+                        <li class="navigation-item"><a href="#ofices" class="navigation-btn">Офисы продаж</a></li>
+                        <li class="navigation-item"><a href="#agents" class="navigation-btn">Агентам</a></li>
+                        <li class="navigation-item-img"><a href="/authorization" class="navigation-btn-img"><img src="/img/Ресурс 3 3.png" alt="#" class="navigation-image"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <script src="js/icon.js"></script>
+    </header>
+
+
+    <section class="welcome-page" id="aboutus">
+
+        <div class="shares-welcome-page">
+            <h1 class="header-shares-welcome-page">
+                Отдых без переплат – выбор умных путешественников
+            </h1>
+            <div class="welcome-page-swiper-container">
+                <div class="block-left-shares-welcome-page">
+                    <button class="swiper-btn left">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5 12H19M5 12L11 6M5 12L11 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </button>
+                    <swiper-container effect="fade" loop="true">
+
+                        <% tours.forEach(tour => { %>
+                            <swiper-slide>
+                                <h3 class="title"><%= tour.name %></h3>
+                                <p><span>Начало:</span> <%= new Date(tour.startDate).toLocaleDateString() %></p>
+                                <p><span>Конец:</span> <%= new Date(tour.endDate).toLocaleDateString() %></p>
+                                <p><span>Город:</span> <%= tour.city %></p>
+                                <p><span>Услуги:</span> <%= tour.services %></p>
+                                <div class="price">
+                                     <%= tour.price.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB', maximumFractionDigits: 0 }) %>
+                                </div>
+                                <p class="amount">Осталось <%= tour.amount %></p>
+                                <button class="buy_button" value="<%= tour.id %>">ПОДАТЬ ЗАЯВКУ</button>
+                            </swiper-slide>
+                        <% }) %>
+                    </swiper-container>
+                    <button class="swiper-btn right">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5 12H19M5 12L11 6M5 12L11 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </button>
+                    <!-- <p class="description-shares-welcome-page">Лучшие предложения для отдыха</p>
+                    <div class="btn-block-left-shares-welcome-page">
+                        <a href="#" class="back-btn-shares-welcome-page"><img src="/img/Arrow 1.png" alt="arrow-btn"></a>
+                        <span class="value-reels">01\20</span>
+                        <a href="#" class="next-btn-shares-welcome-page"><img class="btn-next-welcome-page" src="/img/кнопка далее 1.png" alt="#"></a>
+                    </div> -->
+                </div>
+                <div class="reels-shares-welcome-page">
+                    <img src="/img/example_1 1.png" alt="#" class="image1-reels-shares-welcome-page" id="reels-welcome-page">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="about-us">
+            <div class="block-about-us">
+                <h1 class="header-about-us">
+                    Мы - команда, создающая незабываемые путешествия
+                </h1>
+                <p class="description-about-us">Команда профессионалов, предоставляющих лучший сервис для вашего отдыха. Наша миссия - сделать ваше путешествие незабываемым и беззаботным. Мы стремимся к высочайшему качеству обслуживания и индивидуальному подходу к каждому клиенту.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="promotions-for-agent" id="sales">
+        
+        <div class="block-promotions-for-agent">
+            <h1 class="header-promotions-for-agent">
+                Акции для агенств
+            </h1>
+        
+            <ul class="promotions-items">
+                <li class="promotins-item">
+                    <img src="/img/example_1 2.png" alt="#" class="image-promotion">
+                    <p class="descroption">Скидка 50% <br> Отдых для двоих</p>
+                </li>
+                <li class="promotins-item">
+                    <img src="/img/1667564552_11-sportishka-com-p-male-maldivi-krasivo-11 1.png" alt="#" class="image-promotion">
+                    <p class="descroption">Мальдивы <br> +1% комиссии</p>
+                </li>
+                <li class="promotins-item">
+                    <img src="/img/1667555984_13-sportishka-com-p-plyazhi-antalii-oboi-13 1.png" alt="#" class="image-promotion">
+                    <p class="descroption">Анталия <br> Групповой трансфер</p>
+                </li>
+                <li class="promotins-item">
+                    <img src="/img/shutterstock_1038190354-3 1.png" alt="#" class="image-promotion">
+                    <p class="descroption">Турция <br> Кэшбэк 15%</p>
+                </li>
+                <li class="promotins-item">
+                    <img src="/img/Razones-para-no-visitar-Egipto-51 1.png" alt="#" class="image-promotion">
+                    <p class="descroption">Египет <br> Трансфер в подарок</p>
+                </li>
+                <li class="promotins-item">
+                    <img src="/img/otdykh-v-oae 1.png" alt="#" class="image-promotion">
+                    <p class="descroption">ОАЭ <br> Трансфер в подарок</p>
+                </li>
+            </ul>
+        </div>
+       
+    </section>
+
+    <section class="location" id="ofices">
+        <h3 class="location__title">ОФИСЫ</h3>
+        <div class="find-block-office">
+            <div class="list-items-offices">
+                <div class="list-item-block">
+                    <img src="/img/Ellipse 2.png" alt="#" class="style-list-img">
+                    <div class="text-list-item-block">
+                        <h3 class="header-list-item">
+                            Корупс
+                        </h3>
+                        <p class="description-header-list-item">г. Москва, ул. Улица, р-он. Район, м. Метро, д. Дом</p>
+                    </div>
+                </div>
+                <div class="list-item-block">
+                    <img src="/img/Ellipse 2.png" alt="#" class="style-list-img">
+                    <div class="text-list-item-block">
+                        <h3 class="header-list-item">
+                            Корупс
+                        </h3>
+                        <p class="description-header-list-item">г. Москва, ул. Улица, р-он. Район, м. Метро, д. Дом</p>
+                    </div>
+                </div>
+                <div class="list-item-block">
+                    <img src="/img/Ellipse 2.png" alt="#" class="style-list-img">
+                    <div class="text-list-item-block">
+                        <h3 class="header-list-item">
+                            Корупс
+                        </h3>
+                        <p class="description-header-list-item">г. Москва, ул. Улица, р-он. Район, м. Метро, д. Дом</p>
+                    </div>
+                </div>
+                <div class="list-item-block">
+                    <img src="/img/Ellipse 2.png" alt="#" class="style-list-img">
+                    <div class="text-list-item-block">
+                        <h3 class="header-list-item">
+                            Корупс
+                        </h3>
+                        <p class="description-header-list-item">г. Москва, ул. Улица, р-он. Район, м. Метро, д. Дом</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map-block-offices">
+                <img src="/img/карта 2.png" alt="#" class="map-img">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="agents" id="agents">
+        <div class="container">
+            <div class="block-agents">
+                <div class="top-block-agents">
+                    <h1 class="header-agents">
+                        Надежное партнерство для идеального путешествия - с нами легко и выгодно!
+                    </h1>
+                    <div class="line-agents"></div>
+                    <p class="description-agents">Мы предлагаем уникальную возможность для агентств путешествий расширить свой бизнес и увеличить доходы благодаря нашим эксклюзивным турам и выгодным предложениям. </p>
+                </div>
+                <div class="description-block-agents">
+                    <p class="description-agents-bottom">Мы гарантируем высокое качество услуг и персональный подход к каждому клиенту, помогая в выборе и организации идеального путешествия. Наша команда профессионалов всегда готова ответить на все вопросы и помочь в любых вопросах, связанных с организацией путешествия. Работая с нами, вы получаете надежного партнера, готового к сотрудничеству и помощи в развитии вашего бизнеса.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <ul class="footer-items">
+                <li class="footer-item"><a href="#" class="btn-footer"><img src="/img/inst.png" alt="#" class="footer-iamge-inst"></a></li>
+                <li class="footer-item"><a href="#" class="btn-footer"><img src="/img/Слой 6 1.png" alt="#" class="footer-iamge-vk"></a></li>
+                <li class="footer-item"><a href="#" class="btn-footer"><img src="/img/ютуб 1.png" alt="#" class="footer-iamge-youtube"></a></li>
+                <li class="footer-item"><a href="#" class="btn-footer"><img src="/img/семлс 1.png" alt="#" class="footer-iamge-aviasel"></a></li>
+                <li class="footer-item"><a href="#" class="btn-footer"><img src="/img/ок 1.png" alt="#" class="footer-iamge-ok"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="/js/swiper/swiperMng.js"></script>
+    <script src="/js/header_menu.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/header_admin.js"></script>
+</body>
+</html>

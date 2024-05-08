@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/authorization.css">
+    <title>ВХОД</title>
+</head>
+<body>
+
+    <section class="authorization">
+        <div class="authorization__container">
+            <h1 class="authorization__title">АВТОРИЗАЦИЯ</h1>
+            <div class="error">
+
+            </div>
+            <form class="authorization__form">
+                <input class="authorization__input" type="text" name="login" placeholder="Логин">
+                <input class="authorization__input" type="text" name="password" placeholder="Логин">
+                <button class="authorization__button" type="button">ВОЙТИ</button>
+            </form>
+            <button class="authorization__button" style="display: none;" id="exit" type="button">ВЫЙТИ</button>
+        </div>
+    </section>
+
+    <script src="/js/authorization.js"></script>
+
+</body>
+</html>
